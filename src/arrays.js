@@ -1,33 +1,53 @@
 const getNthElement = (index, array) => {
-  // your code here
+  let n = index - array.length;
+  if (n < 0) {
+    return array[index];
+  } else {
+    return array[n];
+  }
 };
 
+
 const arrayToCSVString = array => {
-  // your code here
+  return array.join(',');
+  
 };
 
 const csvStringToArray = string => {
-  // your code here
+return string.split(',');
 };
 
+// I really dont understand the instructions here
 const addToArray = (element, array) => {
-  // your code here
+if (typeof(string)) {
+  array.push(element);
+  return array;
+} else if (typeof(Number)) {
+  array.push(element);
+  return array;
+} else {
+  return undefined;
+}
+ 
 };
 
+// I really dont understand the instructions here
 const addToArray2 = (element, array) => {
-  // your code here
+//
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
+    
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+
+
 };
 
 const reverseWordsInArray = strings => {
