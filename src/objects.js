@@ -33,19 +33,22 @@ const isOver65 = person => {
 const getAges = people => {
 
 const n = people.map((person) =>  person.age)
-
+return n;
 };
 
 const findByName = (name, people) => {
-  //
+  const found = people.find(person => person.name === name);
+  return found;
 };
 
 const findHondas = cars => {
-  // your code here
+  const myCars = cars.filter(car => car.manufacturer === 'Honda');
+  return myCars;
 };
 
 const averageAge = people => {
-  // your code here
+  const ages = Object.values.age(people).reduce((num, acc) => (num + acc) / 3);
+  return ages;
 };
 
 const createTalkingPerson = (name, age) => {
